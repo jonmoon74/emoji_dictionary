@@ -72,6 +72,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1lp-UR-iB4"/>
                     </view>
+                    <connections>
+                        <outlet property="emojiLabel" destination="zyc-B4-JLs" id="Nzg-u6-kJD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WSZ-AE-eoZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
