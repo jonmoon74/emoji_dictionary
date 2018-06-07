@@ -62,24 +62,42 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Buildings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4rt-SW-nI5">
+                                <rect key="frame" x="112.5" y="429" width="150" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BirthYear: 2010" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZV-fQ-8SH">
+                                <rect key="frame" x="129" y="466" width="117" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="uW1-vU-9LK" firstAttribute="top" secondItem="zyc-B4-JLs" secondAttribute="bottom" constant="50" id="0a3-hu-tQ7"/>
                             <constraint firstItem="uW1-vU-9LK" firstAttribute="centerX" secondItem="oVI-Ka-t98" secondAttribute="centerX" id="8ls-70-W7w"/>
+                            <constraint firstItem="gZV-fQ-8SH" firstAttribute="top" secondItem="4rt-SW-nI5" secondAttribute="bottom" constant="16" id="E4l-qe-DqO"/>
+                            <constraint firstItem="4rt-SW-nI5" firstAttribute="centerX" secondItem="oVI-Ka-t98" secondAttribute="centerX" id="Nma-h7-Az8"/>
                             <constraint firstItem="zyc-B4-JLs" firstAttribute="top" secondItem="1lp-UR-iB4" secondAttribute="top" constant="40" id="Ovx-oj-Qf0"/>
+                            <constraint firstItem="gZV-fQ-8SH" firstAttribute="centerX" secondItem="oVI-Ka-t98" secondAttribute="centerX" id="SOq-rE-IaV"/>
                             <constraint firstItem="zyc-B4-JLs" firstAttribute="centerX" secondItem="oVI-Ka-t98" secondAttribute="centerX" id="WFa-yg-vuc"/>
+                            <constraint firstItem="4rt-SW-nI5" firstAttribute="top" secondItem="uW1-vU-9LK" secondAttribute="bottom" constant="15" id="hxn-EE-Pfy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1lp-UR-iB4"/>
                     </view>
                     <connections>
+                        <outlet property="birthLabel" destination="gZV-fQ-8SH" id="cdo-h3-AAW"/>
+                        <outlet property="categoryLabel" destination="4rt-SW-nI5" id="Qw8-Y7-C78"/>
                         <outlet property="definitionLabel" destination="uW1-vU-9LK" id="qw6-xQ-ebZ"/>
                         <outlet property="emojiLabel" destination="zyc-B4-JLs" id="Nzg-u6-kJD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WSZ-AE-eoZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1742" y="34"/>
+            <point key="canvasLocation" x="1741.5999999999999" y="33.733133433283363"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RyJ-Wr-Bgd">

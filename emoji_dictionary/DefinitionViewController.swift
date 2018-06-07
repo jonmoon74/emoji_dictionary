@@ -11,67 +11,22 @@ import UIKit
 class DefinitionViewController: UIViewController {
 
     @IBOutlet weak var emojiLabel: UILabel!
-    
+    @IBOutlet weak var birthLabel: UILabel!
+    @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var definitionLabel: UILabel!
     
-    var emoji = "NO EMOJI"
+    var emoji = Emoji()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        emojiLabel.text = emoji
+        emojiLabel.text = emoji.stringEmoji
+        birthLabel.text = "Birth Year: \(emoji.birthYear)"
+        categoryLabel.text = "Category: \(emoji.category)"
+        definitionLabel.text = emoji.definition
         
-        if emoji == "😇" {
-            definitionLabel.text = "I am an angel"
-        }
-        if emoji == "💩" {
-            definitionLabel.text = "I am a poo"
-        }
-        if emoji == "💀" {
-            definitionLabel.text = "I am a skull"
-        }
-        if emoji == "👹" {
-            definitionLabel.text = "I am an ogre"
-        }
-        if emoji == "🤬" {
-            definitionLabel.text = "I am a sweary face"
-        }
-        if emoji == "👨‍🍳" {
-            definitionLabel.text = "I am a chef"
-        }
-        if emoji == "🐹" {
-            definitionLabel.text = "I am a cute hamster"
-        }
-        if emoji == "🦑" {
-            definitionLabel.text = "I am a squid"
-        }
-        if emoji == "🥨" {
-            definitionLabel.text = "I am a pretzel"
-        }
-        if emoji == "🎱" {
-            definitionLabel.text = "I am an eightball"
-        }
-        if emoji == "🏕" {
-            definitionLabel.text = "I am tent"
-        }
-        if emoji == "🔐" {
-            definitionLabel.text = "I am a closed lock and key"
-        }
-        if emoji == "👽" {
-            definitionLabel.text = "I am an alien"
-        }
-        if emoji == "😀" {
-            definitionLabel.text = "I am happy"
-        }
-        if emoji == "💒" {
-            definitionLabel.text = "I am a wedding symbol"
-        }
-        if emoji == "🗜" {
-            definitionLabel.text = "I am a clamp"
-        }
-    
     
     }
 
@@ -80,7 +35,4 @@ class DefinitionViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-
-
 }
